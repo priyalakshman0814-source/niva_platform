@@ -1,0 +1,228 @@
+// Indian and Global Food Nutrition Database for NIVA Smart Nutrition Engine
+export const indianFoodDatabase = [
+  {
+    id: 'chapati',
+    name: 'Chapati (Whole Wheat Roti)',
+    category: 'Grains & Breads',
+    unit: 'piece (35g)',
+    calories: 104,
+    protein: 3.1,
+    carbs: 21.0,
+    fat: 0.8,
+    fiber: 3.2,
+    icon: '🥖',
+    gi: 'Medium (52)',
+    glycemicLoad: 11,
+    micronutrients: ['Iron', 'Magnesium', 'Vitamin B1'],
+    tips: 'Good complex carbohydrate. Pair with high protein lentils or paneer for glycemic balance.'
+  },
+  {
+    id: 'dal',
+    name: 'Dal (Yellow Moong / Toor)',
+    category: 'Lentils & Pulses',
+    unit: '1 medium bowl (150g)',
+    calories: 148,
+    protein: 8.9,
+    carbs: 22.4,
+    fat: 2.8,
+    fiber: 5.6,
+    icon: '🍲',
+    gi: 'Low (29)',
+    glycemicLoad: 6,
+    micronutrients: ['Folate', 'Potassium', 'Zinc'],
+    tips: 'Excellent prebiotic fiber and amino acid profile. Enhanced absorption when paired with rice or roti.'
+  },
+  {
+    id: 'rice',
+    name: 'Steamed Rice (Basmati / Sona Masoori)',
+    category: 'Grains & Breads',
+    unit: '1 cup cooked (150g)',
+    calories: 195,
+    protein: 4.1,
+    carbs: 43.0,
+    fat: 0.5,
+    fiber: 0.9,
+    icon: '🍚',
+    gi: 'High (68)',
+    glycemicLoad: 29,
+    micronutrients: ['Manganese', 'Selenium'],
+    tips: 'Fast glycogen replenishment. Combine with dal and ghee to blunt glucose spike.'
+  },
+  {
+    id: 'idli',
+    name: 'Steamed Idli (Fermented Rice & Urad)',
+    category: 'Breakfast Staples',
+    unit: '2 pieces (100g)',
+    calories: 132,
+    protein: 4.8,
+    carbs: 26.2,
+    fat: 0.6,
+    fiber: 2.4,
+    icon: '⚪',
+    gi: 'Medium (60)',
+    glycemicLoad: 15,
+    micronutrients: ['Bioavailable B12', 'Iron'],
+    tips: 'Fermented for superior gut microbiome biodiversity. Easily digestible pre-workout or breakfast.'
+  },
+  {
+    id: 'sambar',
+    name: 'Vegetable Sambar',
+    category: 'Lentils & Pulses',
+    unit: '1 bowl (180g)',
+    calories: 115,
+    protein: 5.2,
+    carbs: 18.0,
+    fat: 2.5,
+    fiber: 4.8,
+    icon: '🥣',
+    gi: 'Low (32)',
+    glycemicLoad: 5,
+    micronutrients: ['Tamarind polyphenols', 'Curcumin', 'Vitamin C'],
+    tips: 'Loaded with drumstick, pumpkin, and anti-inflammatory spice blend (fenugreek, mustard, turmeric).'
+  },
+  {
+    id: 'dosa',
+    name: 'Plain Crisp Dosa',
+    category: 'Breakfast Staples',
+    unit: '1 medium (80g)',
+    calories: 168,
+    protein: 3.9,
+    carbs: 29.5,
+    fat: 3.7,
+    fiber: 1.8,
+    icon: '🥞',
+    gi: 'Medium (55)',
+    glycemicLoad: 16,
+    micronutrients: ['Phosphorus', 'Copper'],
+    tips: 'Rich in slow-release carbs. Balance with coconut chutney and high-protein sambar.'
+  },
+  {
+    id: 'paneer',
+    name: 'Fresh Paneer (Cottage Cheese Curry)',
+    category: 'Dairy & Proteins',
+    unit: '100g portion',
+    calories: 265,
+    protein: 18.3,
+    carbs: 3.4,
+    fat: 20.8,
+    fiber: 0.0,
+    icon: '🧀',
+    gi: 'Very Low (15)',
+    glycemicLoad: 1,
+    micronutrients: ['Calcium (480mg)', 'Phosphorus', 'Vitamin B12'],
+    tips: 'Slow-digesting casein protein. Perfect for muscle repair and overnight satiety.'
+  },
+  {
+    id: 'curd',
+    name: 'Homemade Dahi / Curd',
+    category: 'Dairy & Proteins',
+    unit: '1 cup (150g)',
+    calories: 98,
+    protein: 6.2,
+    carbs: 7.0,
+    fat: 4.8,
+    fiber: 0.0,
+    icon: '🥛',
+    gi: 'Low (28)',
+    glycemicLoad: 2,
+    micronutrients: ['Lactobacillus strains', 'Calcium', 'Riboflavin'],
+    tips: 'Active probiotics support gut-brain axis, serotonin synthesis, and core metabolic rate.'
+  },
+  {
+    id: 'subzi',
+    name: 'Mixed Seasonal Vegetable Curry',
+    category: 'Vegetables & Fiber',
+    unit: '1 bowl (150g)',
+    calories: 120,
+    protein: 3.2,
+    carbs: 14.5,
+    fat: 5.5,
+    fiber: 5.2,
+    icon: '🥦',
+    gi: 'Low (25)',
+    glycemicLoad: 3,
+    micronutrients: ['Beta Carotene', 'Vitamin C', 'Flavonoids'],
+    tips: 'High satiety index. Cooked in heart-healthy cold-pressed mustard or coconut oil.'
+  },
+  {
+    id: 'chana',
+    name: 'Boiled Chana / Chickpea Salad',
+    category: 'Lentils & Pulses',
+    unit: '1 cup (160g)',
+    calories: 210,
+    protein: 11.8,
+    carbs: 34.0,
+    fat: 3.2,
+    fiber: 9.6,
+    icon: '🧆',
+    gi: 'Low (28)',
+    glycemicLoad: 9,
+    micronutrients: ['Manganese', 'Folate', 'Plant sterols'],
+    tips: 'Dense in resistant starch and high leucine for natural muscle protein synthesis.'
+  },
+  {
+    id: 'eggs',
+    name: 'Boiled Free-Range Eggs',
+    category: 'Dairy & Proteins',
+    unit: '2 large eggs (100g)',
+    calories: 144,
+    protein: 12.6,
+    carbs: 1.1,
+    fat: 9.9,
+    fiber: 0.0,
+    icon: '🥚',
+    gi: 'Zero (0)',
+    glycemicLoad: 0,
+    micronutrients: ['Choline', 'Lutein', 'Vitamin D3'],
+    tips: 'Gold standard biological value protein. Choline fuels neural firing and cognitive focus.'
+  },
+  {
+    id: 'fruits',
+    name: 'Papaya & Pomegranate Bowl',
+    category: 'Vegetables & Fiber',
+    unit: '1 medium bowl (180g)',
+    calories: 84,
+    protein: 1.4,
+    carbs: 19.8,
+    fat: 0.4,
+    fiber: 4.2,
+    icon: '🍎',
+    gi: 'Medium (42)',
+    glycemicLoad: 8,
+    micronutrients: ['Papain enzyme', 'Ellagitannins', 'Vitamin C'],
+    tips: 'Digestive enzyme support with potent polyphenols that reduce systemic oxidative stress.'
+  }
+];
+
+export const sampleMeals = [
+  {
+    title: 'Balanced Desi Lunch',
+    description: '2 Chapati + 1 Bowl Dal + 1 Bowl Rice + Curd',
+    items: [
+      { id: 'chapati', count: 2 },
+      { id: 'dal', count: 1 },
+      { id: 'rice', count: 1 },
+      { id: 'curd', count: 1 }
+    ]
+  },
+  {
+    title: 'High Protein Recovery',
+    description: 'Paneer Curry + 2 Chapati + Chana Salad + Curd',
+    items: [
+      { id: 'paneer', count: 1 },
+      { id: 'chapati', count: 2 },
+      { id: 'chana', count: 1 },
+      { id: 'curd', count: 1 }
+    ]
+  },
+  {
+    title: 'Traditional Light Breakfast',
+    description: '3 Idlis + Sambar + Curd + Fruit Bowl',
+    items: [
+      { id: 'idli', count: 1.5 },
+      { id: 'sambar', count: 1 },
+      { id: 'curd', count: 1 },
+      { id: 'fruits', count: 1 }
+    ]
+  }
+];

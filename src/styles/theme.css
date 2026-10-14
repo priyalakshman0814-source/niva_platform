@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #FBFBF9;
+    --text-primary: #13231F;
+    --text-muted: #61756F;
+    --color-forest: #153E35;
+    --color-forest-dark: #0D2923;
+    --color-sage: #DEEEE7;
+    --color-sage-light: #F2F8F5;
+    --color-emerald: #10B981;
+    --color-gold: #C5A880;
+    --border-light: #E3ECE6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FBFBF9;
+    color: #13231F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FBFBF9;
+    color: #13231F;
+    font-family: 'Plus Jakarta Sans', 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  ::selection {
+    background-color: #DEEEE7;
+    color: #153E35;
+  }
+}
+
+/* Light luxury custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F7F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2DFD8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #153E35;
+}
+
+/* Luxury Card & Glassmorphic Utilities */
+.glass-luxury {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(227, 236, 230, 0.9);
+}
+
+.glass-luxury-dark {
+  background: rgba(21, 62, 53, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.luxury-gradient-forest {
+  background: linear-gradient(135deg, #153E35 0%, #1E5649 50%, #2A6E5F 100%);
+}
+
+.luxury-gradient-light {
+  background: radial-gradient(ellipse at 80% 20%, rgba(222, 238, 231, 0.5) 0%, rgba(251, 251, 249, 1) 70%);
+}
+
+.ambient-light-glow {
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(222, 238, 231, 0.45) 0px, transparent 55%),
+    radial-gradient(at 90% 15%, rgba(197, 168, 128, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 60%, rgba(242, 248, 245, 0.8) 0px, transparent 65%);
+}
+
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-subtle-float {
+  animation: subtleFloat 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
