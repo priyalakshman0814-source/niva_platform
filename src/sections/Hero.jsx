@@ -134,7 +134,7 @@ export default function Hero({ onOpenWorkspace }) {
             ) : (
               <div className="relative w-full h-[540px] sm:h-[600px] rounded-3xl overflow-hidden border border-[#E3ECE6] shadow-[0_20px_50px_rgba(21,62,53,0.12)] group">
                 <img
-                  src="/assets/care-watch.webp"
+                  src={`${import.meta.env.BASE_URL}img/hero.jpg`}
                   alt="Couple exploring wearable health technology in a light luxury aesthetic home"
                   className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700"
                 />
